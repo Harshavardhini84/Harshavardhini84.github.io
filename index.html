@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsha Vardhini - Web Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* General Styles */
+        body {
+            background-color: #0A0F1D;
+            color: #E0FFFF;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Use a professional font */
+            line-height: 1.6;
+        }
+        .container-section {
+            border: 1px solid #22577A; /* Subtle border */
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px; /* Slightly less rounded */
+            background-color: #111827;
+            box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.1); /* Muted glow */
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://images.unsplash.com/photo-1519389950473-47a04789385a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover; /* Professional background, you can change this */
+            height: 80vh; /* Adjusted height */
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; /* Align content to the left */
+            color: #E0FFFF;
+            /*font-weight: bold;*//* Removed bold for a cleaner look */
+            text-shadow: 0px 0px 8px #00FFFF; /* Less intense shadow */
+            padding-left: 5%; /* Add some padding to the left */
+        }
+        .hero-content {
+            background-color: rgba(0, 0, 0, 0.6); /* Add a semi-transparent background */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Project Cards */
+        .project-card img {
+            width: 100%;
+            height: 250px; /* Adjusted height for consistency */
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .project-card {
+            transition: transform 0.3s ease; /* Smooth transition */
+        }
+        .project-card:hover {
+            transform: translateY(-5px); /* Slight lift on hover */
+        }
+
+        /* Navbar */
+        .navbar-dark .navbar-nav .nav-link {
+            color: #00FFFF;
+            transition: color 0.3s ease;
+        }
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: #E0FFFF;
+        }
+        .navbar-dark .navbar-brand {
+            color: #00FFFF;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #111827;
+            color: #E0FFFF;
+            border-top: 1px solid #22577A; /* Subtle border */
+        }
+
+        /* Links */
+        a {
+            color: #00FFFF;
+            text-shadow: 0px 0px 3px #00FFFF; /* Reduced text shadow */
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #E0FFFF;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>I'm Harsha Vardhini</h1>
+            <p>Web Developer</p>
+            <a href="#projects" class="btn btn-outline-info">View My Work <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </header>
+
+    <section id="about" class="container container-section">
+        <h2>About</h2>
+        <p>  I am a passionate and dedicated web developer using HTML, CSS, JavaScript, Bootstrap,and ReactJS for front-end development.
+             I also have a strong foundation in Java for back-end capabilities.
+             My passion is creating responsive, user-friendly websites and applications that deliver engaging digital experiences.
+             Aiming to exceed client expectations through high-quality projects.</p>
+    </section>
+
+    <section id="projects" class="container container-section">
+        <h2>Projects</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card project-card bg-dark text-white">
+                    <img src="/assets/SpiceStore.jpeg" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">SpiceStore</h5>
+                        <p class="card-text">A web application built with HTML and CSS</p>
+                        <a href="https://harshavardhini84.github.io/SpiceStore/index.html" class="btn btn-outline-light">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card project-card bg-dark text-white">
+                    <img src="/assets/MYBANK.jpeg" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">My Bank</h5>
+                        <p class="card-text">A web application built with HTML and CSS.</p>
+                        <a href="https://harshavardhini84.github.io/js-bank/index.html" class="btn btn-outline-light">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card project-card bg-dark text-white">
+                    <img src="/assets/Mystore.jpeg" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">My Store</h5>
+                        <p class="card-text">A web application built with HTML,CSS,JavaScript.</p>
+                        <a href="https://harshavardhini84.github.io/Mystore/index.html" class="btn btn-outline-light">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card project-card bg-dark text-white">
+                    <img src="/assets/Interiordesign.jpeg" alt="Project 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Interiors</h5>
+                        <p class="card-text">A web application built with Bootstrap.</p>
+                        <a href="#" class="btn btn-outline-light">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card project-card bg-dark text-white">
+                    <img src="/assets/socialmedia.webp" alt="Project 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Social Media</h5>
+                        <p class="card-text">A web application built with Bootstrap.</p>
+                        <a href="https://harshavardhini84.github.io/socialmedia/index.html" class="btn btn-outline-light">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="contact" class="container container-section">
+        <h2>Contact Me</h2>
+        <p>Email: harshavardhininarupalle@gmail.com</p>
+        <p>Phone: +91 9392544269</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/harsha-vardhini-a5a180328/" class="text-warning">LinkedIn
+        </a></p>
+    </section>
+
+    <footer class="footer text-center py-3">
+        <p>&copy; copyright 2025. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
